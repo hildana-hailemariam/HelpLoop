@@ -1,12 +1,30 @@
 {
   "name": "helploop",
   "version": "1.0.0",
-  "description": "HelpLoop - Learn, Teach, Earn Skills Platform",
+  "description": "HelpLoop - Skill Exchange Platform",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
+  "keywords": [
+    "helploop",
+    "node",
+    "express",
+    "postgresql",
+    "mvc"
+  ],
+  "author": "Hildana Hailemariam",
+  "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "bcrypt": "^6.0.0",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
