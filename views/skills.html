@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+HelpLoop - Skills
+</title>
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+<nav>
+
+
+<div class="logo">
+HelpLoop
+</div>
+
+
+
+<ul>
+
+
+<li>
+<a href="dashboard.html">
+Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="skills.html">
+Skills
+</a>
+</li>
+
+
+<li>
+<a href="profile.html">
+Profile
+</a>
+</li>
+
+
+<li>
+<a href="login.html">
+Logout
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="skills-section">
+
+
+
+<h1>
+Explore Skills 🚀
+</h1>
+
+
+<p>
+Use your credits to learn new skills or share your knowledge with others.
+</p>
+
+
+
+
+
+
+
+<div class="search-box">
+
+<input 
+type="text"
+placeholder="Search for a skill...">
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="skill-cards">
+
+
+
+
+
+
+
+<!-- HTML CSS -->
+
+
+<div class="card">
+
+
+<h2>
+🌐 HTML & CSS
+</h2>
+
+
+<p>
+Learn the basics of creating beautiful websites.
+</p>
+
+
+<br>
+
+
+<p>
+👨‍🏫 Teacher: Alex
+</p>
+
+
+<p>
+⭐ Level: Beginner
+</p>
+
+
+<p>
+💰 Cost: 20 Credits
+</p>
+
+
+
+<button 
+class="btn"
+onclick="learnCourse('HTML & CSS',20)">
+
+Join Course - 20 Credits
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- JavaScript -->
+
+
+<div class="card">
+
+
+<h2>
+⚡ JavaScript
+</h2>
+
+
+<p>
+Learn programming logic and interactive websites.
+</p>
+
+
+<br>
+
+
+<p>
+👩‍🏫 Teacher: Sarah
+</p>
+
+
+<p>
+⭐ Level: Intermediate
+</p>
+
+
+<p>
+💰 Cost: 50 Credits
+</p>
+
+
+
+
+<button 
+class="btn"
+onclick="learnCourse('JavaScript',50)">
+
+Join Course - 50 Credits
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Graphic Design -->
+
+
+<div class="card">
+
+
+<h2>
+🎨 Graphic Design
+</h2>
+
+
+<p>
+Learn creativity, UI design, and visual communication.
+</p>
+
+
+<br>
+
+
+<p>
+👨‍🏫 Teacher: Daniel
+</p>
+
+
+<p>
+⭐ Level: Beginner
+</p>
+
+
+<p>
+💰 Cost: 30 Credits
+</p>
+
+
+
+
+<button 
+class="btn"
+onclick="learnCourse('Graphic Design',30)">
+
+Join Course - 30 Credits
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Mobile Development -->
+
+
+<div class="card">
+
+
+<h2>
+📱 Mobile Development
+</h2>
+
+
+<p>
+Create Android applications and mobile experiences.
+</p>
+
+
+<br>
+
+
+<p>
+👩‍🏫 Teacher: Maria
+</p>
+
+
+<p>
+⭐ Level: Advanced
+</p>
+
+
+<p>
+💰 Cost: 80 Credits
+</p>
+
+
+
+
+<button 
+class="btn"
+onclick="learnCourse('Mobile Development',80)">
+
+Join Course - 80 Credits
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Language -->
+
+
+<div class="card">
+
+
+<h2>
+🌍 Language Learning
+</h2>
+
+
+<p>
+Improve communication and learn new languages.
+</p>
+
+
+<br>
+
+
+<p>
+👨‍🏫 Teacher: John
+</p>
+
+
+<p>
+⭐ Level: Beginner
+</p>
+
+
+<p>
+💰 Cost: 25 Credits
+</p>
+
+
+
+
+<button 
+class="btn"
+onclick="learnCourse('Language Learning',25)">
+
+Join Course - 25 Credits
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Web Full Course -->
+
+
+<div class="card">
+
+
+<h2>
+💻 Full Web Development
+</h2>
+
+
+<p>
+Complete HTML, CSS, JavaScript and backend learning.
+</p>
+
+
+<br>
+
+
+<p>
+👩‍🏫 Teacher: Emma
+</p>
+
+
+<p>
+⭐ Level: Advanced
+</p>
+
+
+<p>
+💰 Cost: 100 Credits
+</p>
+
+
+
+
+<button 
+class="btn"
+onclick="learnCourse('Full Web Development',100)">
+
+Join Course - 100 Credits
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+© 2026 HelpLoop. All rights reserved.
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+
+<button class="theme-btn" onclick="toggleTheme()">
+
+🌙
+
+</button>
+
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+</body>
+
+
+</html>
