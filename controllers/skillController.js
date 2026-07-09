@@ -1,7 +1,6 @@
 const Skill = require("../models/Skill");
 
 
-// Display all skills
 const getAllSkills = async (req, res) => {
 
     try {
@@ -24,7 +23,6 @@ const getAllSkills = async (req, res) => {
 
 
 
-// Add new skill
 const createSkill = async (req, res) => {
 
     try {
