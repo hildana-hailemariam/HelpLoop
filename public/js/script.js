@@ -1,13 +1,3 @@
-// =================================
-// HelpLoop Main JavaScript
-// =================================
-
-
-
-// ================================
-// Dark / Light Mode
-// ================================
-
 
 const themeButton = document.querySelector(".theme-btn");
 
@@ -91,14 +81,6 @@ window.addEventListener("load", function(){
 
 
 
-
-
-
-// ================================
-// Welcome Message
-// ================================
-
-
 function welcomeUser(){
 
 
@@ -115,10 +97,6 @@ function welcomeUser(){
 
 
 
-
-// ================================
-// Skill Search
-// ================================
 
 
 const searchInput = document.querySelector(".search-box input");
@@ -357,12 +335,6 @@ requestButtons.forEach(function(button){
 
 
 });
-// ================================
-// HelpLoop Credit System
-// ================================
-
-
-// Get credits
 
 let userCredits = localStorage.getItem("credits");
 
@@ -453,8 +425,6 @@ function learnCourse(courseName, cost){
 
 
 
-
-// Earn credits by teaching
 
 function teachSkill(skillName, reward){
 
