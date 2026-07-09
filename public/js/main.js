@@ -1,14 +1,8 @@
-// HelpLoop JavaScript
-
-
-// Dark / Light Mode
 
 function toggleTheme() {
 
     document.body.classList.toggle("dark-mode");
 
-
-    // Save user preference
 
     if(document.body.classList.contains("dark-mode")){
 
@@ -42,9 +36,6 @@ window.onload = function(){
 
 
 
-
-
-// Simple welcome message
 
 function welcomeUser(){
 
