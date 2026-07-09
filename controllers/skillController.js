@@ -2,7 +2,6 @@ const Skill = require("../models/Skill");
 
 
 // Display all skills
-
 const getAllSkills = async (req, res) => {
 
     try {
@@ -11,12 +10,13 @@ const getAllSkills = async (req, res) => {
 
         res.json(skills);
 
+    } catch (error) {
 
-    } catch(error) {
+        console.log("GET SKILLS ERROR:", error);
 
-        console.log(error);
-
-        res.status(500).send("Server Error");
+        res.status(500).json({
+            message: error.message
+        });
 
     }
 
@@ -24,11 +24,8 @@ const getAllSkills = async (req, res) => {
 
 
 
-
 // Add new skill
-
 const createSkill = async (req, res) => {
-
 
     try {
 
@@ -40,21 +37,16 @@ const createSkill = async (req, res) => {
         } = req.body;
 
 
-
-        const teacher_id = req.session.user.id;
-
+        const teacher_id = 1;
 
 
         const skill = await Skill.createSkill(
-
             title,
             description,
             level,
             credit_cost,
             teacher_id
-
         );
-
 
 
         res.json({
@@ -66,51 +58,43 @@ const createSkill = async (req, res) => {
         });
 
 
+    } catch (error) {
 
-    } catch(error) {
+        console.log("CREATE SKILL ERROR:", error);
 
-        console.log(error);
-
-        res.status(500).send("Server Error");
+        res.status(500).json({
+            message: error.message
+        });
 
     }
-
 
 };
 
 
 
-
 // Get single skill
-
-const getSkill = async (req,res)=>{
-
+const getSkill = async (req, res) => {
 
     try {
-
 
         const skill = await Skill.getSkillById(
             req.params.id
         );
 
-
         res.json(skill);
 
 
+    } catch (error) {
 
-    } catch(error){
+        console.log("GET ONE SKILL ERROR:", error);
 
-
-        console.log(error);
-
-        res.status(500).send("Server Error");
-
+        res.status(500).json({
+            message: error.message
+        });
 
     }
 
-
 };
-
 
 
 

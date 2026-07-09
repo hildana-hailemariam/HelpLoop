@@ -36,7 +36,7 @@ app.use(
         }
     })
 );
-
+console.log("Loading auth routes...");
 // Routes
 app.use("/auth", authRoutes);
 app.use("/skills", skillRoutes);

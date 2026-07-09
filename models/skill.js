@@ -44,10 +44,9 @@ const createSkill = async (
     const result = await db.query(
 
         `INSERT INTO skills
-        (title, description, level, credit_cost, teacher_id)
+        (title, description, level, credit_cost, teacher_id,create_at)
         VALUES ($1,$2,$3,$4,$5)
-        RETURNING *`,
-
+        RETURNING *`
         [
             title,
             description,
